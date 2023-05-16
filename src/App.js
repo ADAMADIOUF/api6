@@ -4,6 +4,7 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import SingleProduct from './components/SingleProduct'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/products/:id' element={<SingleProduct />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
